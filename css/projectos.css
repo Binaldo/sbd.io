@@ -1,0 +1,49 @@
+.containerP{
+    /*background:linear-gradient(45deg, blueviolet, lightgreen);*/
+    padding: 40px 9%;
+    padding-bottom: 50px;
+}
+
+.containerP .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#000;
+    /*text-shadow: 0 5px 10px rgba(0,0,0,.1);*/
+    font-size: 25px;
+}
+
+.containerP .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.containerP .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    transition: .2s linear;
+}
+
+.containerP .box-container .box img{
+    height: 80px;
+}
+
+.containerP .box-container .box h3{
+    color:#444;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.containerP .box-container .box p{
+    color:#535353;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.containerP .box-container .box:hover, .testimonial-item:hover, .col-md-4 .img-fluid:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    transform: scale(1.01);
+}

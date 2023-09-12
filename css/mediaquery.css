@@ -1,0 +1,236 @@
+/* Novo breakpoint personalizado */
+@media (max-width: 970px) and (min-width: 768px) {
+    .comentarios .card {
+        max-width: 100% !important;
+        /* Certifique-se de que os cards ocupem a largura total da tela */
+    }
+
+    .cont {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 370px) {
+    .col-md-44 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (max-width: 991px) {
+    #navbarNav a {
+        margin-left: 0 !important;
+    }
+}
+
+/* ESTTILOS PARA TELAS DE CELULAR */
+@media screen and (max-width: 768px) {
+    body h1 {
+        font-size: 24px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    body h2 {
+        font-size: 18px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    body h3 {
+        font-size: 16px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    p {
+        font-size: 15px;
+        /* Reduzir o tamanho da fonte */
+        line-height: 1.7;
+    }
+
+    .hero-title {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .Hero p {
+        font-size: 20px;
+    }
+
+    .services-content h2 {
+        font-size: 24px;
+    }
+
+    .services-content p {
+        font-size: 14px !important;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .cartao-content h1 {
+        font-size: 18px;
+    }
+
+    .cartao-content p {
+        font-size: 14px !important;
+    }
+
+    .project-text h2 {
+        font-size: 20px;
+    }
+
+    .col-md-4 .img-fluid {
+        height: 250px;
+    }
+
+    .cont::before {
+
+        background-image: url('../imagens/Fundo_pequeno.png');
+    }
+
+    .cont {
+        height: 80vh;
+    }
+
+    .statistic h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .statistic p.count {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .titulo-item h3,
+    .commitment-item h3 {
+        font-size: 17px;
+    }
+
+    .titulo-item li {
+        font-size: 15px;
+    }
+
+    .team-one .container .row>* {
+        width: 33.3%;
+    }
+
+    .team-one__title {
+        font-size: 15px;
+    }
+
+    .team-one__name {
+        font-size: 15px;
+    }
+
+    .containerP .heading {
+        font-size: 18px;
+    }
+
+    .testimonial-author span {
+        font-size: 15px;
+    }
+
+    .profile-image {
+        width: 50px;
+        height: 50px
+    }
+
+    .box-top {
+        margin-bottom: 5px;
+    }
+
+    .team-item h4 {
+        font-size: 16px;
+    }
+
+    .containerP{
+        padding:20px;
+    }
+}
+
+
+/*RODAPÉ*/
+@media (max-width: 900px) {
+    footer .content .link-boxes {
+        flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+    }
+
+    .content .top .logo-details {
+        font-size: 20px;
+    }
+
+    .content .top .media-icons a {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    footer::before {
+        top: 145px;
+    }
+
+    footer .content .top {
+        flex-direction: column;
+    }
+
+    .content .top .media-icons {
+        margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 100%;
+    }
+
+    .content .top .logo-details {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .content .link-boxes .box .link_name {
+
+        font-size: 15px
+    }
+}

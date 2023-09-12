@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Arquivos CSS externo -->
+    <link rel="icon" href="imagens/SBD icon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/izeetak.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/projectos.css">
+    <link rel="stylesheet" href="css/comentario.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+
+    <!-- Arquivos CDN de ícones e fontes -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Arquivo CSS do Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- Arquivo CSS do Slick Slider - Tema padrão -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="js/animacao.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Arquivo JavaScript do Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>SBD | Projectos</title>
+
+    <style>
+        @media screen and (max-width:600px) {
+            .contact-hero{
+                height: 40vh;
+            }
+            .contact-hero h1 {
+        font-size: 20px; /* Reduzir o tamanho da fonte */
+    }
+    .contact-hero h1 span {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+}
+        @media screen and (min-width:600px) and (max-width:768px){
+            .contact-hero{
+                height: 40vh;
+            }
+            .contact-hero h1 {
+        font-size: 24px; /* Reduzir o tamanho da fonte */
+    }
+    .contact-hero h1 span {
+        font-size: 18px; /* Reduzir o tamanho da fonte */
+    }}
+
+            .contact-hero{
+                height: 80vh;
+            }
+ 
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Corpo da página -->
+    <div class="d-flex flex-column wrapper principal">
+
+
+        <!-- Botão Scroll para cima -->
+        <div class="arrow">
+            <a href="#" title="Ir para o topo" onclick="scrollToTop()">
+                <span class="fas fa-angle-up"></span>
+            </a>
+        </div>
+
+
+        <!-- Cabeçalho de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom shadow-sm mb-3 " id="cabecalho">
+            <div class="container">
+                <!-- Logotipo na seção esquerda do cabeçalho -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/SBD icon 2.0.png" alt="">
+                </a>
+                <!--Menu sandwich-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Seção de navegação na seção direita do cabeçalho -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projectos.html">Projectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="hero_projecto contact-hero">
+            <h1>Criatividade em acção <br><span>- Construindo pontes para alcançar o sucesso do seu projecto -</span></h1>
+        </div>
+
+        <main>
+            
+            <!-- Projectos concluidos -->
+            <div class="containerP">
+
+                <h1 class="heading">Projectos concluídos</h1>
+            
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="imagens/icon-1.png" alt="">
+                        <h3>HTML 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imagens/icon-2.png" alt="">
+                        <h3>CSS 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imagens/icon-3.png" alt="">
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imagens/icon-4.png" alt="">
+                        <h3>SASS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+            
+                    <div class="box">
+                        <img src="imagens/icon-5.png" alt="">
+                        <h3>JQuery</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>                        
+                    </div>
+            
+                    <div class="box">
+                        <img src="imagens/icon-6.png" alt="">
+                        <h3>React.js</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+            
+                </div>
+            
+            </div>
+            
+
+            <!--Secção livre-->
+            <section class="project-section">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-md-6 order-md-2">
+                            <div class="project-image">
+                                <img src="imagens/Consultoria de TI.png" alt="Imagem do Projeto">
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <div class="project-text">
+                                <h2>Título do projecto</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget ligula euismod,
+                                    dapibus ligula eu, dapibus velit.
+                                    Nulla vel odio pharetra, venenatis erat in, interdum ligula. Integer sit amet ipsum
+                                    vitae odio commodo ultrices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+            <section class="statistics py-5">
+                <div class="container">
+                    <h2 class="text-center">Estatística de projectos</h2>
+                    <div class="row">
+                        <div class="col-md-44">
+                            <div class="statistic">
+                                <h3>Concluídos</h3>
+                                <p class="count">120 <i class="fa-solid fa-check fa-fade"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-md-44">
+                            <div class="statistic">
+                                <h3>Em andamento</h3>
+                                <p class="count">35 <i class="fa-solid fa-spinner fa-spin"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-md-44">
+                            <div class="statistic">
+                                <h3>Total</h3>
+                                <p class="count">155</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--Rodapé-->
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <i>
+                            <img src="imagens/SBD icon 3.0.png" alt="">
+                        </i>
+                        <span class="logo_name">System & Business Development Company</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Company</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projectos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Serviços</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Instalação de
+                                redes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Consultoria em
+                                TI</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Análise de dados</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Cybersegurança</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Parceiros</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">KasperSky</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Lenovo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Primavera</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Projectos</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 4</a>
+                        </li>
+                    </ul>
+                    <ul class="box input-box">
+                        <li class="link_name">Contacte-nos</li>
+                        <li>
+                            <input type="text" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="button" value="Enviar">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2023
+                        <a href="#">System & Business Development Company</a>
+                        Todos
+                        direitos reservados
+                    </span>
+                    <span class="policy_terms">
+                        <a href="#">Políticas de Privacidade</a>
+                        <a href="#">Termos & condições</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!--Fim do Rodapé-->
+    </div>
+
+    <!-- JavaScript do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Scroll para o topo da página-->
+    <script>
+        function scrollToTop() {
+            // Rolando a página suavemente até o topo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Adicionando um observador para verificar a posição da página ao fazer o scroll
+        window.addEventListener("scroll", function () {
+            var arrow = document.querySelector(".arrow");
+            // Se a posição vertical da página for maior que 100px, exibe o botão, caso contrário, oculta.
+            arrow.style.display = (window.pageYOffset > 100) ? "block" : "none";
+        });
+    </script>
+
+
+    <!-- Script para esconder e revelar o NavBar-->
+    <script>
+        let prevScrollPos = window.pageYOffset; // Variável para armazenar a posição anterior do scroll
+    
+        window.addEventListener('scroll', function() {
+            // Verifica a posição atual do scroll
+            let currentScrollPos = window.pageYOffset;
+    
+            // Verifica a direção do scroll
+            if (currentScrollPos > prevScrollPos) {
+                // Scroll para baixo - oculta o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll para cima - exibe o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(0)';
+            }
+    
+            // Atualiza a posição anterior do scroll
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+
+
+    <!-- Scripts de partículas animadas-->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

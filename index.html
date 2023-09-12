@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Arquivos CSS externo -->
+    <link rel="icon" href="imagens/SBD icon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/izeetak.css">
+    <link rel="stylesheet" href="css/projectos.css">
+    <link rel="stylesheet" href="css/comentario.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+
+    <!-- Arquivos CDN de ícones e fontes -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Arquivo CSS do Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- Arquivo CSS do Slick Slider - Tema padrão -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="js/animacao.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Arquivo JavaScript do Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>SBD | Home</title>
+
+</head>
+
+<body>
+    <!-- Scripts do Slick Slider -->
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!-- Corpo da página -->
+    <div class="d-flex flex-column wrapper principal">
+
+
+        <!-- Botão Scroll para cima -->
+        <div class="arrow">
+            <a href="#" title="Ir para o topo" onclick="scrollToTop()">
+                <span class="fas fa-angle-up"></span>
+            </a>
+        </div>
+
+
+        <!-- Cabeçalho de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom shadow-sm mb-3 " id="cabecalho">
+            <div class="container">
+                <!-- Logotipo na seção esquerda do cabeçalho -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/SBD icon 2.0.png" alt="">
+                </a>
+                <!--Menu sandwich-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Seção de navegação na seção direita do cabeçalho -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projectos.html">Projectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Principal-->
+        <div class="cont">
+            <div class="hero-content">
+                <h1 class="hero-title">Sysytem & Business Development</h1>
+                <p class="hero-description">Transformando seu futuro tecnológico <br>com soluções
+                    inovadoras e suporte especializado em TI
+                </p>
+            </div>
+        </div>
+
+
+        <!--Serviços fornecidos-->
+        <section class="services-one">
+            <div class="container">
+                <div class="section-titulo text-center">
+                    <h2 class="text-center font-weight-bold">Nossos serviços</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Consultoria
+                                    <br>em IT
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-app-development">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Desenvolvimento de
+                                    <br>Softwares
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInRight animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInRight;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-cloud-storage">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="">Instalação de
+                                    <br>Redes
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Análise de
+                                    <br>Dados
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Implementação de
+                                    <br>Cybersegurança
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Reparação e
+                                    <br>Manutenção
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <hr>
+
+        <!-- Carrossel de parceiros -->
+        <div class="container patrocinio">
+            <h2 class="text-center font-weight-bold">Parceiros</h2>
+            <section class="customer-logos slider">
+                <div class="slide"><img src="imagens/Kaspesky.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Lenovo.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Microsoft.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Logitech.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/ZKTeco.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Bobcat.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Odoo.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Vercel.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/PHC.png" alt="logo"></div>
+                <div class="slide"><img src="imagens/Sage.png" alt="logo"></div>
+            </section>
+        </div>
+
+        <hr>
+
+        <!-- Título Projeto destaque -->
+        <h2 class="text-center">Projecto destaque</h2>
+
+        <!-- Secção livre -->
+        <section class="project-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="project-image">
+                            <img src="imagens/Consultoria de TI.png" alt="Imagem do Projeto">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="project-text">
+                            <h2>Título do Projecto</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget ligula euismod,
+                                dapibus ligula eu, dapibus velit.
+                                Nulla vel odio pharetra, venenatis erat in, interdum ligula. Integer sit amet ipsum
+                                vitae odio commodo ultrices. Nulla vel odio pharetra, venenatis erat in, interdum ligula.
+                                 Integer sit amet ipsum vitae odio commodo ultrices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Link para ver mais projetos -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">Ver mais projetos</a>
+        </div>
+
+        <hr>
+
+        <!-- Depoimentos de clientes -->
+        <section class="mainComent">
+            <h2 class="text-center font-weight-bold">Avaliação sobre a empresa</h2>
+            <div class="full-boxer">
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="imagens/1 (2).png">
+                            </div>
+                            <div class="Name">
+                                <strong>Ranidi Lochana</strong>
+                                <span>@Ranidi Lochana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="imagens/2.png">
+                            </div>
+                            <div class="Name">
+                                <strong>Senuda Dilwan</strong>
+                                <span>@senuda dilwan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="imagens/3.png">
+                            </div>
+                            <div class="Name">
+                                <strong>Rumali fernando</strong>
+                                <span>@Rumali fernando</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="imagens/4.png">
+                            </div>
+                            <div class="Name">
+                                <strong>Midinu Thiranjana</strong>
+                                <span>@Midinu Thiranjana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Secção livre -->
+        <section class="services-section ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="services-image">
+                            <img src="imagens/Projecto Home.png" alt="Imagem da Empresa">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-content">
+                            <h2>Adira aos nossos serviços</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla facilisi. In hac habitasse platea dictumst.
+                                Suspendisse consectetur nisi nec nibh ullamcorper, vel gravida purus sodales.
+                                Vestibulum non turpis eget dui fermentum cursus a sit amet nunc.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Rodapé-->
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <i>
+                            <img src="imagens/SBD icon 3.0.png" alt="">
+                        </i>
+                        <span class="logo_name">System & Business Development Company</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Company</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projectos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Serviços</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Instalação de
+                                redes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Consultoria em
+                                TI</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Análise de dados</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Cybersegurança</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Parceiros</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">KasperSky</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Lenovo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Primavera</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Projectos</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 4</a>
+                        </li>
+                    </ul>
+                    <ul class="box input-box">
+                        <li class="link_name">Contacte-nos</li>
+                        <li>
+                            <input type="text" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="button" value="Enviar">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2023
+                        <a href="#">System & Business Development Company</a>
+                        Todos
+                        direitos reservados
+                    </span>
+                    <span class="policy_terms">
+                        <a href="#">Políticas de Privacidade</a>
+                        <a href="#">Termos & condições</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!--Fim do Rodapé-->
+    </div>
+
+    <!-- JavaScript do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Script do scroll para o topo da página-->
+    <script>
+        function scrollToTop() {
+            // Rolando a página suavemente até o topo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Adicionando um observador para verificar a posição da página ao fazer o scroll
+        window.addEventListener("scroll", function () {
+            var arrow = document.querySelector(".arrow");
+            // Se a posição vertical da página for maior que 100px, exibe o botão, caso contrário, oculta.
+            arrow.style.display = (window.pageYOffset > 100) ? "block" : "none";
+        });
+    </script>
+
+    <!-- Script do carrossel-->
+    <script>
+
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+
+    </script>
+
+    <!-- Script para esconder e revelar o NavBar-->
+    <script>
+        let prevScrollPos = window.pageYOffset; // Variável para armazenar a posição anterior do scroll
+    
+        window.addEventListener('scroll', function() {
+            // Verifica a posição atual do scroll
+            let currentScrollPos = window.pageYOffset;
+    
+            // Verifica a direção do scroll
+            if (currentScrollPos > prevScrollPos) {
+                // Scroll para baixo - oculta o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll para cima - exibe o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(0)';
+            }
+    
+            // Atualiza a posição anterior do scroll
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+</body>
+
+</html>

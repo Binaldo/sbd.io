@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Arquivos CSS externo -->
+    <link rel="icon" href="imagens/SBD icon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/izeetak.css">
+    <link rel="stylesheet" href="css/projectos.css">
+    <link rel="stylesheet" href="css/comentario.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <script src="js/animacao.js"></script>
+    <!-- Arquivos CDN de ícones e fontes -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Arquivo CSS do Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- Arquivo CSS do Slick Slider - Tema padrão -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Arquivo JavaScript do Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="css/hero.css">
+    <title>SBD | Sobre</title>
+    <style>
+        .contact-page{
+            background-color: #f9f9f9;
+        }
+        /* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 24px; /* Reduzir o tamanho da fonte */
+    }
+    
+    .contact-hero h1 span {
+        font-size: 18px; /* Reduzir o tamanho da fonte */
+    }
+    .contact-hero{
+        height: 60vh;
+    }
+}
+    </style>
+    
+</head>
+
+<body>
+ <!-- Scripts do Slick Slider -->
+ <script>
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
+        });
+    });
+</script>
+    <!-- Corpo da página -->
+    <div class="d-flex flex-column wrapper principal">
+
+
+        <!-- Botão Scroll para cima -->
+        <div class="arrow">
+            <a href="#" title="Ir para o topo" onclick="scrollToTop()">
+                <span class="fas fa-angle-up"></span>
+            </a>
+        </div>
+
+
+        <!-- Cabeçalho de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom shadow-sm mb-3 " id="cabecalho">
+            <div class="container">
+                <!-- Logotipo na seção esquerda do cabeçalho -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/SBD icon 2.0.png" alt="">
+                </a>
+                <!--Menu sandwich-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Seção de navegação na seção direita do cabeçalho -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projectos.html">Projectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero_sobre contact-hero">
+            <h1>Sobre Nós<span>- Conheça mais sobre nossa empresa -</span></h1>
+        </div>
+
+
+        <!-- Secção de história-->
+        <section class="history-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-title1">Nossa História</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent ac elit id
+                            elit dictum varius. Pellentesque vel dui et mi tincidunt tincidunt eu eu mauris. Sed vel
+                            odio ac mauris euismod cursus. Sed a feugiat nisi. Etiam ut libero vel lectus malesuada
+                            fringilla.</p>
+                        <p>Praesent ullamcorper, odio vel aliquet consectetur, purus neque aliquam purus, ac iaculis
+                            arcu enim at justo. Nunc tincidunt dolor et est dignissim, vel tempor eros facilisis. Cras
+                            fermentum mauris vel justo tincidunt, id elementum odio aliquet.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Aqui você pode adicionar uma imagem ou um vídeo que representa a história da empresa -->
+                        <img src="imagens/1.png" alt="História da Empresa" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section class="mission-services py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-center font-weight-bold">Missão e Serviços</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="titulo-item">
+                            <h3>Missão</h3>
+                            <p><i class="fa-solid fa-crosshairs"></i> Nossa missão é fornecer soluções inovadoras e de alta qualidade em tecnologia da informação, ajudando nossos clientes a alcançar seus objetivos e impulsionar seu crescimento.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="titulo-item">
+                            <h3>Serviços</h3>
+                            <ul>
+                                <li><i class="fa-regular fa-circle-dot"></i> Consultoria em TI</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Desenvolvimento de Software Personalizado</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Instalação e Configuração de Redes</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Análise de Dados e Business Intelligence</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Cybersegurança e Proteção de Dados</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Reparação e Manutenção de Equipamentos</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Suporte Técnico Especializado</li>
+                                <li><i class="fa-regular fa-circle-dot"></i> Treinamento em Tecnologia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<hr>
+<section class="values-principles py-5">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2 class="text-center font-weight-bold">Valores e Princípios</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="titulo-item">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-dot"></i> Ética e Transparência</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Excelência e Qualidade</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Inovação e Criatividade</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Compromisso com o Cliente</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Trabalho em Equipe</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Responsabilidade Social</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="titulo-item">
+                    <h3>Princípios</h3>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-dot"></i> Orientação para Resultados</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Foco no Cliente</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Respeito à Diversidade</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Sustentabilidade e Preservação Ambiental</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Inovação e Melhoria Contínua</li>
+                        <li><i class="fa-regular fa-circle-dot"></i> Desenvolvimento Profissional e Pessoal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="customer-commitment py-5">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2 class="text-center font-weight-bold">Nosso compromisso com o cliente</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Atendimento Personalizado</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Nosso compromisso é fornecer atendimento personalizado e dedicado a cada cliente, entendendo suas necessidades específicas e oferecendo soluções sob medida.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Qualidade e Excelência</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Buscamos sempre a excelência em tudo o que fazemos, entregando serviços de alta qualidade, soluções tecnológicas robustas e duradouras.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Comprometimento com Prazos</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Valorizamos o tempo dos nossos clientes e nos comprometemos a cumprir prazos acordados, garantindo a entrega pontual dos projetos.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Transparência e Honestidade</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Construímos relações de confiança com nossos clientes, baseadas em transparência, honestidade e ética em todas as nossas interações.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Suporte e Acompanhamento</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Nosso compromisso não termina com a entrega do projeto. Oferecemos suporte contínuo e acompanhamento para garantir a satisfação e sucesso do cliente.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="commitment-item">
+                    <h3>Inovação e Melhoria Contínua</h3>
+                    <p><i class="fa-solid fa-crosshairs"></i> Estamos sempre em busca de novas tecnologias e práticas inovadoras para aprimorar nossos serviços e agregar mais valor aos nossos clientes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>    
+
+        <!--Equipe-->
+        <section class="team-one about-page-team equipe">
+            <div class="container">
+                <div class="section-title text-center">                    
+                    <div class="section-titulo text-center">
+                        <h2 class="text-center font-weight-bold">Conheça os especialistas da empresa</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <!--Team One Single-->
+                        <div class="team-one__single  wow fadeInLeft animated" data-wow-delay="0ms"
+                            data-wow-duration="1000ms"
+                            style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: fadeInLeft;">
+                            <div class="team-one__img">
+                                <img src="imagens/1 (2).png" alt="">
+
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__name">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Kevin Martin</font>
+                                    </font>
+                                </h3>
+                                <p class="team-one__title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Especialista em TI</font>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <!--Team One Single-->
+                        <div class="team-one__single wow fadeInLeft animated" data-wow-delay="100ms"
+                            data-wow-duration="1000ms"
+                            style="visibility: visible; animation-duration: 1000ms; animation-delay: 100ms; animation-name: fadeInLeft;">
+                            <div class="team-one__img">
+                                <img src="imagens/2.png" alt="">
+
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__name">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Jéssica Brown</font>
+                                    </font>
+                                </h3>
+                                <p class="team-one__title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Especialista em TI</font>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <!--Team One Single-->
+                        <div class="team-one__single wow fadeInRight animated" data-wow-delay="0ms"
+                            data-wow-duration="1000ms"
+                            style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: fadeInRight;">
+                            <div class="team-one__img">
+                                <img src="imagens/1 (2).png" alt="">
+
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__name">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Mike Hardson</font>
+                                    </font>
+                                </h3>
+                                <p class="team-one__title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Especialista em TI</font>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <!--Team One Single-->
+                        <div class="team-one__single wow fadeInRight animated" data-wow-delay="100ms"
+                            data-wow-duration="1000ms"
+                            style="visibility: visible; animation-duration: 1000ms; animation-delay: 100ms; animation-name: fadeInRight;">
+                            <div class="team-one__img">
+                                <img src="imagens/2.png" alt="">
+
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__name">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Christine Eve</font>
+                                    </font>
+                                </h3>
+                                <p class="team-one__title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Especialista em TI</font>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Equipe Fim-->
+
+
+        <!--Rodapé-->
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <i>
+                            <img src="imagens/SBD icon 3.0.png" alt="">
+                        </i>
+                        <span class="logo_name">System & Business Development Company</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Company</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projectos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Serviços</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Instalação de
+                                redes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Consultoria em TI</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Análise de dados</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Cybersegurança</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Parceiros</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">KasperSky</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Lenovo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Primavera</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Projectos</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 4</a>
+                        </li>
+                    </ul>
+                    <ul class="box input-box">
+                        <li class="link_name">Contacte-nos</li>
+                        <li>
+                            <input type="text" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="button" value="Enviar">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2023
+                        <a href="#">System & Business Development Company</a>
+                        Todos
+                        direitos reservados
+                    </span>
+                    <span class="policy_terms">
+                        <a href="#">Políticas de Privacidade</a>
+                        <a href="#">Termos & condições</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!--Fim do Rodapé-->
+    </div>
+
+    <!-- Script do carrossel-->
+    <script>
+
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+
+    </script>
+
+    <!-- JavaScript do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+    <!-- Scroll para o topo da página-->
+    <script>
+        function scrollToTop() {
+            // Rolando a página suavemente até o topo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Adicionando um observador para verificar a posição da página ao fazer o scroll
+        window.addEventListener("scroll", function () {
+            var arrow = document.querySelector(".arrow");
+            // Se a posição vertical da página for maior que 100px, exibe o botão, caso contrário, oculta.
+            arrow.style.display = (window.pageYOffset > 100) ? "block" : "none";
+        });
+    </script>
+
+
+    <!-- Script para esconder e revelar o NavBar-->
+    <script>
+        let prevScrollPos = window.pageYOffset; // Variável para armazenar a posição anterior do scroll
+    
+        window.addEventListener('scroll', function() {
+            // Verifica a posição atual do scroll
+            let currentScrollPos = window.pageYOffset;
+    
+            // Verifica a direção do scroll
+            if (currentScrollPos > prevScrollPos) {
+                // Scroll para baixo - oculta o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll para cima - exibe o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(0)';
+            }
+    
+            // Atualiza a posição anterior do scroll
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+
+</body>
+
+</html>

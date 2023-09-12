@@ -1,0 +1,595 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+.wrapper {
+    min-height: 100vh;
+}
+
+/*Estilo e definicoes do corpo*/
+body {
+    min-width: 372px;
+    background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body h2 {
+    font-size: 26px; /* Reduzir o tamanho da fonte */
+}
+
+/*dimensao do logotipo*/
+.navbar-brand img {
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+}
+
+/*cor e posicao do cabecalho*/
+#cabecalho {
+    background-color: #212529 !important;
+    position: fixed;
+    /*fixa o cabecalho*/
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: transform 0.5s;
+}
+
+#cabecalho button {
+    background-color: #2caff1;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-toggler {
+    padding: 0.1rem 0.2rem !important;
+}
+
+/*main {
+    padding-top: 200px;
+}*/
+
+#navbarNav a {
+    color: #ffffff;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.active {
+    color: #ffc526 !important;
+}
+
+#navbarNav a:hover {
+    color: #ffc526 !important;
+}
+
+.menu {
+    padding: 20px;
+    width: 200px;
+    border: #000000;
+    margin-right: 20px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+}
+
+.contentor {
+    display: flex;
+}
+
+.menu {
+    width: 20%;
+}
+
+.border-bottom {
+    border-bottom: none !important;
+}
+
+.menu li {
+    list-style: none;
+    font-size: 0.8em;
+}
+
+.text-center {
+    padding: 15px;
+}
+
+.section-title .text-center{
+    margin-top: 20px;
+}
+
+.texto-center{
+    text-align: center;
+}
+
+.texto-centro {
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.team-section .container .row .col-md-4{
+    padding-bottom: 20px;
+}
+
+.py-5 {
+    padding-bottom: 1rem !important;
+    background: white;
+}
+
+
+/**/
+
+.HeroHome {
+    background: linear-gradient(180deg, #2caff1 -28.35%, rgba(63, 0, 156, 0) 153.96%);
+    margin: 0;
+    height: 100vh;
+}
+
+.imgHero {
+    width: 100%;
+    object-fit: cover;
+}
+
+.rowHero {
+    display: flex;
+}
+
+.containerHero {
+    max-width: 90%;
+    margin: 120px 0 auto;
+}
+
+.Hero {
+    gap: 0.5em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-width: calc(115vh - 93.6px);
+}
+
+.Hero>* {
+    flex: 1 1 20em;
+}
+
+.Hero h1 {
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 40px);
+    line-height: 1;
+}
+
+.textoHero {
+    padding-left: 15px;
+}
+
+.Hero p {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 1em 0;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*Scroll to top*/
+.arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+    display: none;
+}
+
+.arrow a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #2caff1;
+    display: block;
+    border-radius: 3px;
+}
+
+.arrow a span {
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+
+
+
+.comentarios {
+    /* Defina a aparência e posicionamento da seção de comentários */
+    padding: 5px;
+
+    text-align: center;
+    /* Adicione uma margem superior para separar do rodapé */
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    height: 350px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+
+
+}
+
+.u-color {
+    color: #2caff1;
+}
+
+.user-image img {
+    border: 3px solid #2caff1;
+    padding: 2px
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+/*++++++++++++++++++++++++*/
+.projetos_realizados {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.projetos_realizados .row {
+    justify-content: center !important;
+    /* Centraliza horizontalmente os projetos */
+}
+
+.projetos_realizados .col-md-4 {
+    margin-bottom: 20px !important;
+    /* Adiciona espaçamento entre as colunas */
+}
+
+/*++++++++++++++++++++++++*/
+
+.projetos_realizados .card {
+    max-width: 400px;
+    /* Ou qualquer outro valor adequado */
+    height: 600px;
+
+}
+
+.projetos_realizados .card h5 {
+
+    color: #ffc526 !important;
+}
+
+.projects-section .container {
+    overflow: hidden;
+}
+
+.project-section{
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.925);
+}
+
+.project-section h2 {
+
+    color: #f2f2f2;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    animation: slideInLeft 1s forwards;
+}
+
+.project-text {
+    padding: 20px;
+}
+
+.project-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffc526 !important;
+}
+
+.project-text p{
+    color: rgb(219, 219, 219) !important;
+}
+
+/* Animação para a imagem deslizar da esquerda */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    animation: slideInLeft 1s forwards;
+}
+
+
+
+
+/* Estilo para a seção de serviços */
+.services-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.services-image img {
+    width: 75%;
+    border-radius: 10px;
+    animation: slideInLeft 1s forwards;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.services-content {
+    padding: 20px;
+}
+
+.services-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffc526 !important;
+
+}
+
+.services-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #535353;
+
+}
+
+.botao-meio {
+    position: absolute !important;
+    /*top: 10% !important;*/
+    left: 44% !important;
+    /*top: 10px !important;*/
+    /*transform: translate(0%, -50%) !important;*/
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #2caff1;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c90a3;
+}
+
+.btn-primary {
+    --bs-btn-border-color: none !important;
+}
+
+/* Estilo para a seção de destaque */
+.hero-section {
+    background-color: #333;
+    /* Adicione aqui a cor de fundo desejada para a seção */
+    color: #fff;
+    /* Cor do texto da seção (pode ser branca ou outra cor que contraste bem com o fundo) */
+    text-align: center;
+    padding: 100px 0;
+    /* Espaçamento interno da seção */
+}
+
+/* Estilo para o título do destaque */
+
+
+.cont {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    overflow: hidden;
+    /* Para esconder qualquer parte da imagem que saia do contêiner */
+}
+
+.cont::before {
+    content: '';
+    background-image: url('../imagens/Hero\ Principal.png');
+    /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1px) brightness(0.3);
+    /* Adiciona efeito de desfoque e torna a imagem mais escura */
+    opacity: 0.8;
+    /* Define a opacidade de 50% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do conteúdo */
+}
+
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #f3b610;
+    padding-bottom: 40px;
+    /* Cor do texto, ajuste conforme desejado */
+    opacity: 80%;
+    /* Inicialmente, o texto estará invisível */
+    animation: fadeIn 2s ease-in-out infinite alternate;
+    /* Define a animação com duração de 2 segundos, infinita e alternada */
+    /* Animação de fade-in */
+}
+
+.hero-description {
+    font-size: 25px;
+    color: #ffffff;
+    /* Cor do texto, ajuste conforme desejado */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 90%;
+        /* No início da animação (0%), o texto está invisível (opacidade 0) */
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        /* No final da animação (100%), o texto está totalmente visível (opacidade 1) */
+    }
+}
+
+
+/*@media (max-width: 830px) {
+    
+
+    /*.textoHero {
+        padding-left: 10px;
+    }*/
+
+    /*.HeroHome {
+        height: 100vh;
+    }
+
+    .imgHero {
+        width: 75%;
+    }
+
+    .Hero p {
+        font-size: 22px;
+        padding-left: 10px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 831px) and (max-width: 1120px) {
+    .HeroHome {
+        height: 100vh;
+    }
+}*/
+
+
+/*background da seccao equipe*/
+.equipe {
+    background-color: #fff;
+}
+
+.statistics {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.statistics h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.statistic {
+    padding: 20px 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.statistic h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #535353;
+}
+
+.statistic p.count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffc526;
+}
+
+.py-5 {
+    padding-top: 1rem!important;
+}
+
+.col-md-4 .img-fluid {
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    transition: .2s linear;
+}
+
+.team-item h4{
+    font-size: 19px;
+    padding-top: 15px;
+}
+
+.testimonial-author h4{
+    font-size: 18px;
+}
+
+.testimonial-image{
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.testimonial-item{
+    box-shadow: 0 5px 10px rgba(0,0,0,.06);
+    transition: .2s linear;
+}
+
+.commitment-item, .titulo-item{
+    padding-bottom: 15px;
+}
+
+.testimonial-content p, .testimonial-author span, .section-title p, .team-item p, 
+.col-md-6 p, .services-item li, .titulo-item li, .commitment-item p{
+    color: #535353;
+}
+
+.titulo-item ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.titulo-item h3, .commitment-item h3{
+    font-size: 21px;
+}

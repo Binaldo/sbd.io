@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBD | Servicos</title>
+
+    <!-- Arquivos CSS externo -->
+    <link rel="icon" href="imagens/SBD icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/izeetak.css">
+    <link rel="stylesheet" href="css/projectos.css">
+    <link rel="stylesheet" href="css/comentario.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/hero.css">
+
+    <!-- Arquivos CDN de ícones e fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        /* Estilização para ajustar a posição das imagens nos depoimentos */
+        .testimonial-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonial-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            text-align: center;
+        }
+
+        .testimonial-author h4 {
+            margin-bottom: 5px;
+        }
+
+
+        .contact-page {
+            background-color: #f9f9f9;
+        }
+
+        /* Estilos para telas menores */
+        @media screen and (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 24px;
+                /* Reduzir o tamanho da fonte */
+            }
+
+            .contact-hero h1 span {
+                font-size: 18px;
+                /* Reduzir o tamanho da fonte */
+            }
+
+            .contact-hero {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper principal">
+
+        <!-- Botão Scroll para cima -->
+        <div class="arrow">
+            <a href="#" title="Ir para o topo" onclick="scrollToTop()">
+                <span class="fas fa-angle-up"></span>
+            </a>
+        </div>
+
+        <!-- Cabeçalho de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom shadow-sm mb-3" id="cabecalho">
+            <div class="container cab">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/SBD icon 2.0.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projectos.html">Projectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Banner -->
+        <div class="hero contact-hero">
+            <h1>Excelência em prestação de serviços<span>- Transformando sonhos em realidade, um serviço de excelência de cada vez -</span></h1>
+        </div>
+
+        <!--Serviços fornecidos-->
+        <section class="services-one">
+            <div class="container">
+                <div class="section-titulo text-center">
+                    <h2 class="text-center font-weight-bold">Nossos serviços</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Consultoria
+                                    <br>em IT
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp animated" data-wow-delay="200ms"
+                        style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-app-development">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Desenvolvimento de
+                                    <br>Softwares
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInRight animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInRight;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-cloud-storage">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="">Instalação de
+                                    <br>Redes
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-server"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Configuração de
+                                    <br>Servidores
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Backup
+                                    <br>em Núvem
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-wifi"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Configuração de
+                                    <br>Roteador
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Análise de
+                                    <br>Dados
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-file-shield"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Implementação de
+                                    <br>Cybersegurança
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms"
+                        style="visibility: visible; animation-delay: 100ms; animation-name: fadeInLeft;">
+                        <!--Services One Single-->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-conversation">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </span>
+                            </div>
+                            <h3 class="services-one__title">
+                                <a href="#">Reparação e
+                                    <br>Manutenção
+                                </a>
+                            </h3>
+                            <p class="services-one__text">
+                                There are many variations of passages of lorem im available,
+                                but majority suffered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <hr>
+        
+        <section class="testimonials py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-center font-weight-bold">Depoimentos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-light rounded p-4 mb-4">
+                            <div class="testimonial-content">
+                                <p>
+                                    "Excelente serviço prestado pela SBD! Eles realmente entendem de tecnologia e nos
+                                    ajudaram a melhorar nossos processos de negócios. Recomendo!"
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="imagens/Bill Gates.jpg" alt="Cliente 1" class="testimonial-image">
+                                <h4>Bill Gates</h4>
+                                <span>CEO, Empresa XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-light rounded p-4 mb-4">
+                            <div class="testimonial-content">
+                                <p>
+                                    "Trabalhamos com a SBD há vários anos e sempre fomos muito bem atendidos. Eles
+                                    são extremamente profissionais e dedicados."
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="imagens/Elon Musk.jpg" alt="Cliente 2"
+                                    class="testimonial-image">
+                                <h4>Elon Musk</h4>
+                                <span>Diretor de TI, Empresa ABC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="team-section py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-center font-weight-bold">Nossa Equipe</h2>
+                    <p class="texto-center">Conheça as equipes especializadas em cada setor:</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/Consultoria TI.jpg" alt="Reparação e Manutenção"
+                                class="img-fluid team-img">
+                            <h4>Consultoria em TI</h4>
+                            <p>Equipe especializada em reparação e manutenção de equipamentos e sistemas, mantendo tudo
+                                funcionando perfeitamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/programador-trabalhando-em-seu-computador-cercado-por-monitores-exibindo-codigo-generativo-ai_212944-22358.png"
+                                alt="Desenvolvimento de Software" class="img-fluid team-img">
+                            <h4>Desenvolvimento de Software</h4>
+                            <p>Equipe especializada no desenvolvimento de software, criando soluções personalizadas para
+                                as necessidades dos clientes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/istockphoto-1296958325-612x612.jpg" alt="Instalação de Redes"
+                                class="img-fluid team-img">
+                            <h4>Instalação de Redes</h4>
+                            <p>Equipe experiente em instalação e configuração de redes, garantindo conectividade segura
+                                e eficiente.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/premium_photo-1661726918615-c3c0c1b2564b.png" alt="Análise de Dados"
+                                class="img-fluid team-img">
+                            <h4>Análise de Dados</h4>
+                            <p>Equipe especializada em análise de dados, fornecendo insights valiosos para a tomada de
+                                decisões estratégicas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/centrodecontroledacopa_134.jpg" alt="Cybersegurança"
+                                class="img-fluid team-img">
+                            <h4>Cybersegurança</h4>
+                            <p>Equipe dedicada a proteger sistemas e dados contra ameaças cibernéticas, garantindo a
+                                segurança das informações.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/manutencao-de-computadores-da-empresa.jpg" alt="Reparação e Manutenção"
+                                class="img-fluid team-img">
+                            <h4>Reparação e Manutenção</h4>
+                            <p>Equipe especializada em reparação e manutenção de equipamentos e sistemas, mantendo tudo
+                                funcionando perfeitamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/Server.jpg" alt="Reparação e Manutenção"
+                                class="img-fluid team-img">
+                            <h4>Configuração de Servidor</h4>
+                            <p>Equipe especializada em reparação e manutenção de equipamentos e sistemas, mantendo tudo
+                                funcionando perfeitamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/manutencao-de-computadores-da-empresa.jpg" alt="Reparação e Manutenção"
+                                class="img-fluid team-img">
+                            <h4>Backup em Núvem</h4>
+                            <p>Equipe especializada em reparação e manutenção de equipamentos e sistemas, mantendo tudo
+                                funcionando perfeitamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item">
+                            <img src="imagens/Roteador Wifi.jpg" alt="Reparação e Manutenção"
+                                class="img-fluid team-img">
+                            <h4>Configuração de Roteadores</h4>
+                            <p>Equipe especializada em reparação e manutenção de equipamentos e sistemas, mantendo tudo
+                                funcionando perfeitamente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Rodapé-->
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <i>
+                            <img src="imagens/SBD icon 3.0.png" alt="">
+                        </i>
+                        <span class="logo_name">System & Business Development Company</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Company</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projectos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Serviços</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Instalação de
+                                redes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Consultoria em
+                                TI</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Análise de dados</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Cybersegurança</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Parceiros</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">KasperSky</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Lenovo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Primavera</a>
+                        </li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Projectos</li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light underline-animation">Projecto 4</a>
+                        </li>
+                    </ul>
+                    <ul class="box input-box">
+                        <li class="link_name">Contacte-nos</li>
+                        <li>
+                            <input type="text" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="button" value="Enviar">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2023
+                        <a href="#">System & Business Development Company</a>
+                        Todos
+                        direitos reservados
+                    </span>
+                    <span class="policy_terms">
+                        <a href="#">Políticas de Privacidade</a>
+                        <a href="#">Termos & condições</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!--Fim do Rodapé-->
+    </div>
+
+
+    <!-- Scroll para o topo da página-->
+    <script>
+        function scrollToTop() {
+            // Rolando a página suavemente até o topo
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Adicionando um observador para verificar a posição da página ao fazer o scroll
+        window.addEventListener("scroll", function () {
+            var arrow = document.querySelector(".arrow");
+            // Se a posição vertical da página for maior que 100px, exibe o botão, caso contrário, oculta.
+            arrow.style.display = (window.pageYOffset > 100) ? "block" : "none";
+        });
+    </script>
+
+
+    <!-- Script para esconder e revelar o NavBar-->
+    <script>
+        let prevScrollPos = window.pageYOffset; // Variável para armazenar a posição anterior do scroll
+
+        window.addEventListener('scroll', function () {
+            // Verifica a posição atual do scroll
+            let currentScrollPos = window.pageYOffset;
+
+            // Verifica a direção do scroll
+            if (currentScrollPos > prevScrollPos) {
+                // Scroll para baixo - oculta o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll para cima - exibe o navbar
+                document.getElementById('cabecalho').style.transform = 'translateY(0)';
+            }
+
+            // Atualiza a posição anterior do scroll
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+
+    <!-- Arquivos JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/animacao.js"></script>
+
+</body>
+</body>
+
+</html>

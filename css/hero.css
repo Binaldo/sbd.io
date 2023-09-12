@@ -1,0 +1,101 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*.col-md-6 p{
+    color: #535353;
+}*/
+.contact-hero {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.348), rgba(20, 63, 85, 0.396)) 0 0 / 1000% no-repeat;
+    -webkit-animation: gradientAnimation 30s ease infinite;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../imagens/Hero\ Servicos.png) 0 0 / cover no-repeat;
+    -webkit-animation: blurAnimation 30s ease infinite;
+    animation: blurAnimation 30s ease infinite;
+    filter: blur(0.1px);
+    z-index: -1; /* Definir z-index como -1 para ficar atrás do texto */
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%   { background-position: 0% 30%, 0 0; }
+    50%  { background-position: 100% 70%, 0 0; }
+    100% { background-position: 0% 30%, 0 0; }
+}
+
+@keyframes gradientAnimation {
+    0%   { background-position: 0% 30%, 0 0; }
+    50%  { background-position: 100% 70%, 0 0; }
+    100% { background-position: 0% 30%, 0 0; }
+}
+
+@-webkit-keyframes blurAnimation {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes blurAnimation {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.6; }
+}
+
+.contact-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff; /* Cor da fonte em branco */
+    font: normal 600 40px/1 'Poppins', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.contact-hero h1 span {
+    display: block;
+    margin-top: 1em;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hero_sobre:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../imagens/Hero\ Sobre.png) 0 0 / cover no-repeat;
+    -webkit-animation: blurAnimation 30s ease infinite;
+    animation: blurAnimation 40s ease infinite;
+    filter: blur(1.4px);
+    z-index: -1; /* Definir z-index como -1 para ficar atrás do texto */
+}
+
+.hero_projecto:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../imagens/Hero\ Projectos.png) 0 0 / cover no-repeat;
+    -webkit-animation: blurAnimation 30s ease infinite;
+    animation: blurAnimation 40s ease infinite;
+    filter: blur(1.4px);
+    z-index: -1; /* Definir z-index como -1 para ficar atrás do texto */
+}
+
